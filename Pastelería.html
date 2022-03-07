@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Treats</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: rgb(5, 48, 141);
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 100%;
+            background-color: #b3dff3;
+            height: 3000px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+
+<header>
+    <h1>¡Bienvenidos!</h1>
+    <h2><img src = "C:\Users\cjcca\Desktop\LaunchX\Front-end\HTML\Logo.png" alt = "logo" width = "400px" height = "220px"></h2>
+</header>
+
+<body>
+
+    <article>
+            <h3>Pasteles</h3>
+
+            <p><img src = "C:\Users\cjcca\Desktop\LaunchX\Front-end\HTML\pastel_chocolate.jpg" alt = "logo" width = "250px" height = "220px"> Pastel de chocolate ............................................... Desde $99</p>
+            <p><img src = "C:\Users\cjcca\Desktop\LaunchX\Front-end\HTML\pastel-de-tres-leches.jpg" alt = "logo" width = "250px" height = "220px"> Pastel de tres leches  ........................................... Desde $129</p>
+            <p><img src = "C:\Users\cjcca\Desktop\LaunchX\Front-end\HTML\Pastel-de-Moka.jpg" alt = "logo" width = "250px" height = "220px"> Pastel de moka ................................................... Desde $159</p>
+            <p><img src = "C:\Users\cjcca\Desktop\LaunchX\Front-end\HTML\Pastel de fresa.jpg" alt = "logo" width = "250px" height = "220px"> Pastel de fresas ................................................. Desde $159</p>
+            <p><img src = "C:\Users\cjcca\Desktop\LaunchX\Front-end\HTML\Pastel de frutas.jpg" alt = "logo" width = "250px" height = "220px"> Pastel de frutas ................................................. Desde $159</p>
+            <p><img src = "C:\Users\cjcca\Desktop\LaunchX\Front-end\HTML\Pastel-Zanahoria.jpg" alt = "logo" width = "250px" height = "220px"> Pastel de zanahoria ............................................... Desde $99</p>
+
+    <hr>
+
+            <h2>Tamaños </h2>
+    
+            <dl>
+                <dt>Pequeño .............. Precio de lista </dt>
+                <dd>-10 rebanadas</dd>
+
+                <br>
+
+                <dt>Mediano .............. + $50</dt>
+                <dd>-18 rebanadas</dd>
+
+                <br>
+
+                <dt>Grande .............. + $150 </dt>
+                <dd>-30 rebanadas</dd>
+
+                <br>
+
+                <dt>Personalizado </dt>
+                <dd>Para pasteles más grandes se realiza cotización con al menos una semana de anticipación.</dd>
+
+                <br>
+
+            </dl>
+
+    <hr>
+
+            <h3>Adornos</h3>
+
+            <p>Todos nuestros pasteles incluyen un mensaje escrito a elegir por el cliente. </p>
+
+            <p><img src = "C:\Users\cjcca\Desktop\LaunchX\Front-end\HTML\Pastel infantil.jpg" alt = "logo" width = "250px" height = "220px"> Decoración Infantil ................ Desde $49</p>
+
+            <p><img src = "C:\Users\cjcca\Desktop\LaunchX\Front-end\HTML\Pastel Boda.jpg" alt = "logo" width = "250px" height = "220px"> Decoración Boda ......................... + $149</p>
+
+            <p><img src = "C:\Users\cjcca\Desktop\LaunchX\Front-end\HTML\pastel_graduacion.jpg" alt = "logo" width = "250px" height = "220px"> Decoración Graduación ......................... + $49</p>
+
+            <p><img src = "C:\Users\cjcca\Desktop\LaunchX\Front-end\HTML\Pastel Feliz Cumpleaños.jpg" alt = "logo" width = "250px" height = "220px"> Decoración Feliz Cumpleaños ......................... + $99</p>
+    <hr>
+            
+            <h3>Haz tu pedido</h3>
+
+            <a href="Pedido_pastelería.html">
+                <button>Hacer Pedido</button>
+            </a>
+    </article>
+    
+</body>
+</html>
