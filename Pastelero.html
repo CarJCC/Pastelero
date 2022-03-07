@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelero</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(134, 162, 223);
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 100%;
+            background-color: #b3dff3;
+            height: 2000px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mis Pedidos</h1>
+    </header>
+    
+    <h2>Tabla de Pedidos</h2>
+
+    <table>
+        <tr>
+            <th style="background-color: #b3dff3">Nombre</th>
+            <th style="background-color: #b3dff3">Teléfono</th>
+            <th style="background-color: #b3dff3">Email</th>
+            <th style="background-color: #b3dff3">Descripción del Pastel</th>
+            <th style="background-color: #b3dff3">Sabores</th>
+            <th style="background-color: #b3dff3">Adornos</th>
+            <th style="background-color: #b3dff3">Fecha de Entrega</th>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(228, 228, 228)">Alfreds Futterkiste</td>
+            <td>55 6789 2912</td>
+            <td style="background-color: rgb(228, 228, 228)">alfred@gmail.com</td>
+            <td>Para 30 personas</td>
+            <td style="background-color: rgb(228, 228, 228)">Chocolate con leche</td>
+            <td>Cumpleaños</td>
+            <td style="background-color: rgb(228, 228, 228)">07/03/2022</td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(228, 228, 228)">Francisco Chang	</td>
+            <td>55 3221 3434</td>
+            <td style="background-color: rgb(228, 228, 228)">f.chang@hotmail.com</td>
+            <td>Para 10 personas</td>
+            <td style="background-color: rgb(228, 228, 228)">Tres leches</td>
+            <td>Mensaje: ¡Feliz cumpleaños!</td>
+            <td style="background-color: rgb(228, 228, 228)">07/03/2022</td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(228, 228, 228)">Mariana Gonzalez</td>
+            <td>55 3231 6734</td>
+            <td style="background-color: rgb(228, 228, 228)">gonzalez@gmail.com</td>
+            <td>Para 150 personas</td>
+            <td style="background-color: rgb(228, 228, 228)">Fresa</td>
+            <td>Boda</td>
+            <td style="background-color: rgb(228, 228, 228)">17/03/1022</td>
+        </tr>
+    </table>
+
+    <h2>Sabores Restantes</h2>
+
+    <ul>
+        <li>Zanahoria</li>
+        <li>Moka</li>
+        <li>Frutas</li>
+    </ul>
+
+    <h2>Adornos Restantes</h2>
+
+    <ul>
+        <li>Graduación</li>
+    </ul>
+
+    <h2>Pedidos Realizados</h2>
+
+    <table>
+        <tr>
+            <th style="background-color: #b3dff3">Nombre</th>
+            <th style="background-color: #b3dff3">Teléfono</th>
+            <th style="background-color: #b3dff3">Email</th>
+            <th style="background-color: #b3dff3">Descripción del Pastel</th>
+            <th style="background-color: #b3dff3">Sabores</th>
+            <th style="background-color: #b3dff3">Adornos</th>
+            <th style="background-color: #b3dff3">Fecha de Entrega</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>55 6789 2912</td>
+            <td>alfred@gmail.com</td>
+            <td>18 personas</td>
+            <td>Fresa</td>
+            <td>Infantil</td>
+        </tr>
+        <tr>
+            <td>Francisco Chang</td>
+            <td>55 3221 3455</td>
+            <td>f.chang@hotmail.com</td>
+            <td>30 personas</td>
+            <td>Tres leches</td>
+            <td>Mensaje</td>
+        </tr>       
+        <tr>
+            <td>Andrea Herrera</td>
+            <td>55 2221 3433</td>
+            <td>mari_andy_lili@hotmail.com</td>
+            <td>10 personas</td>
+            <td>Frutas</td>
+            <td>Feliz Cumpleaños</td>
+        </tr>
+
+    </table>
+
+</body>
