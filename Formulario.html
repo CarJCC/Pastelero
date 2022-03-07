@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pedido</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(134, 162, 223);
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 100%;
+            background-color: #b3dff3;
+            height: 1000px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+
+<header>
+    <h1>Mi pedido</h1>
+</header>
+
+<body>
+
+    <article>
+    
+    <hr>
+
+    <h2>Ejemplo de Formulario</h2>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="correo1">Correo:</label>
+        <input type="email" id="correo1" name="correo1"><br><br>
+    
+        <label for="tel1">Teléfono:</label>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+    <hr>
+
+        <h2>Sabor de tu pastel</h2>
+        <label for="sabor"></label>
+        <select id="sabor" name="sabor">
+            <option value="selecciona">Selecciona una opción</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="tres leches">Tres leches</option>
+            <option value="moka">Moka</option>
+            <option value="fresas">Fresas</option>
+            <option value="frutas">Frutas</option>
+            <option value="zanahoria">Zanahoria</option>
+        </select>
+    
+        <h2>Tamaño de tu pastel</h2>
+        <input type="radio" id="chico" name="tamaño" value="Chico">
+        <label for="chico">Chico</label><br>
+        <input type="radio" id="verde" name="tamaño" value="Mediano">
+        <label for="verde">Mediano</label><br>
+        <input type="radio" id="grande" name="tamaño" value="Grande">
+        <label for="grande">Grande</label><br>
+        <input type="radio" id="perzonalizado" name="tamaño" value="personalizado">
+        <label for="Personalizado">Personalizado: 
+        <input type="number" id="numero1" name="numero1" maxlength="3"> </label> personas<br>
+
+
+        <h2>Decoración</h2>
+
+        <input type="radio" id="mensaje" name="mensaje" value="mensaje">
+        <label for="mensaje">Escribe tu mensaje (máx 30 caracteres):   <input type="text" id="Input1" name="Input1" maxlength="30"> </label><br>
+        
+        <input type="radio" id="infantil" name="Decoración" value="infantil">
+        <label for="infantil">Infantil </label><br>
+
+        <input type="radio" id="boda" name="Decoración" value="boda">
+        <label for="boda">Boda</label><br>
+
+        <input type="radio" id="Graduación" name="Graduación" value="Graduación">
+        <label for="grande">Graduación</label><br>
+
+        <input type="radio" id="cumpleaños" name="cumpleaños" value="cumpleaños">
+        <label for="grande">Cumpleaños</label><br>
+
+        <hr>
+    
+        <h2>Fecha de entrega</h2><br>
+        <input type="datetime-local" id="fecha2" name="fecha2"><br>
+
+        <br><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    </article>
+    
+</body>
+</html>
